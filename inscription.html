@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+
+<body>
+
+    <h1>Inscription au club arduino</h1>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Identité</legend>
+            <label for="nom"> Nom</label>
+            <input minlength="2" maxlength="40" type="text" id="nom" name="nom" placeholder="Dupont" required>
+            <label for="prenom"> Prenom</label>
+            <input minlength="2" maxlength="40" type="text" id="prenom" name="prenom" placeholder="Jean" required>
+            <label for="email">mail</label>
+            <input type="email" name="email" id="email" required placeholder="ex@domaine.fr">
+            <label for="tel">Numéro de téléphone</label>
+            <input type="tel" name="tel" id="tel" pattern="0[0-9]{9}" placeholder="06 00 00 00 00">
+            <label for="daten">date de naissance</label>
+            <input type="date" name="date" id="daten" max="2011-12-31">
+
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Préférence</legend>
+            <input type="radio" name="niveau" value="débutant" id="debutant" checked>
+            <label for="debutant">débutant</label>
+            <input type="radio" name="niveau" value="confirmé" id="confirme">
+            <label for="confirme">confirmé</label>
+            <input type="radio" name="niveau" value="Pro" id="pro">
+            <label for="pro">Pro</label>
+        </fieldset>
+        <fieldset>
+            <legend>centre d'interet </legend>
+            <input type="checkbox" name="hobbie" value="Capteurs" id="Capteurs">
+            <label for="Capteurs">Capteurs</label>
+            <input type="checkbox" name="hobbie" value="Robotique" id="Robotique">
+            <label for="Robotique">Robotique</label>
+            <input type="checkbox" name="hobbie" value="Réseau" id="Réseau">
+            <label for="Réseau">Réseau</label>
+            <input type="checkbox" name="hobbie" value="Domotique" id="Domotique">
+            <label for="Domotique">Domotique</label>
+        </fieldset>
+        <fieldset>
+            <Legend>Créneau</Legend>
+            <label for="Créneau">Créneau</label>
+            <select name="Créneau" id="Créneau">
+                <option value="Mardi Soir"> Mardi soir</option>
+                <option value="Mercredi après-midi"> Mercredi après-midi</option>
+                <option value="Jeudi midi"> Jeudi midi</option>
+
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Votre projet</legend>
+            <label for="description">Déscription</label>
+            <textarea name="description du projet" id="description" rows="5" cols="85" minlength="20"></textarea>
+            <label for="photo"> photo du montage :</label>
+            <input type="file" name="photo" id="photo" accept="image/*">
+
+            <input type="checkbox" name="Reglement" id="Reglement" required>
+            <label for="Reglement">J'accepte le Reglement</label>
+
+            <Button type="submit"> Envoyer </Button>
+            <Button type="reset"> Effacer </Button>
+        </fieldset>
+
+
+
+    </form>
+
+
+
+
+</body>
+
+</html>
